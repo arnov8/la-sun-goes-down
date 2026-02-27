@@ -39,16 +39,16 @@ export default function Contact() {
         </div>
 
         {/* Contact heading */}
-        <h2 className="font-lulo text-teal text-2xl md:text-3xl text-center mb-12">
+        <h2 className="font-lulo text-teal text-3xl md:text-4xl text-center mb-12">
           CONTACT
         </h2>
 
         {/* Newsletter section */}
         <div className="mb-16">
-          <h3 className="font-lulo text-teal text-sm md:text-base text-center mb-6 tracking-wider">
+          <h3 className="font-lulo text-teal text-base md:text-lg text-center mb-6 tracking-wider">
             INSCRIVEZ VOUS POUR NE RIEN RATER
           </h3>
-          <p className="text-teal-light text-sm text-center mb-6 font-light">
+          <p className="text-teal-light text-base md:text-lg text-center mb-6 font-light">
             Inscrivez vous à notre petite newsletter. Nous vous enverrons avant
             chaque évènement quelques informations pour ne rien rater :)
           </p>
@@ -63,11 +63,11 @@ export default function Contact() {
               required
               value={newsletterEmail}
               onChange={(e) => setNewsletterEmail(e.target.value)}
-              className="w-full px-4 py-3 bg-gray-200 text-teal placeholder-gray-500 text-sm focus:outline-none focus:ring-2 focus:ring-orange"
+              className="w-full px-4 py-3 bg-gray-200 text-teal placeholder-gray-500 text-base focus:outline-none focus:ring-2 focus:ring-orange"
             />
             <button
               type="submit"
-              className="w-full bg-orange text-white font-medium py-3 text-sm tracking-wider hover:bg-orange-dark transition-colors duration-300"
+              className="w-full bg-orange text-white font-medium py-3 text-base tracking-wider hover:bg-orange-dark transition-colors duration-300"
             >
               S&apos;abonner maintenant
             </button>
@@ -76,10 +76,10 @@ export default function Contact() {
 
         {/* Contact form */}
         <div>
-          <h3 className="font-lulo text-teal text-sm md:text-base text-center mb-4 tracking-wider">
+          <h3 className="font-lulo text-teal text-base md:text-lg text-center mb-4 tracking-wider">
             POUR NOUS CONTACTER
           </h3>
-          <p className="text-teal/70 text-sm text-center mb-8 font-light">
+          <p className="text-teal/70 text-base md:text-lg text-center mb-8 font-light">
             Envoyez nous ce formulaire, nous vous répondrons extrêmement
             rapidement!
           </p>
@@ -96,7 +96,7 @@ export default function Contact() {
               onChange={(e) =>
                 setFormData({ ...formData, name: e.target.value })
               }
-              className="w-full px-4 py-3 border-2 border-orange text-teal placeholder-gray-400 text-sm focus:outline-none focus:border-teal transition-colors"
+              className="w-full px-4 py-3 border-2 border-orange text-teal placeholder-gray-400 text-base focus:outline-none focus:border-teal transition-colors"
             />
             <input
               type="email"
@@ -106,7 +106,7 @@ export default function Contact() {
               onChange={(e) =>
                 setFormData({ ...formData, email: e.target.value })
               }
-              className="w-full px-4 py-3 border-2 border-orange text-teal placeholder-gray-400 text-sm focus:outline-none focus:border-teal transition-colors"
+              className="w-full px-4 py-3 border-2 border-orange text-teal placeholder-gray-400 text-base focus:outline-none focus:border-teal transition-colors"
             />
             <input
               type="text"
@@ -115,7 +115,7 @@ export default function Contact() {
               onChange={(e) =>
                 setFormData({ ...formData, subject: e.target.value })
               }
-              className="w-full px-4 py-3 border-2 border-orange text-teal placeholder-gray-400 text-sm focus:outline-none focus:border-teal transition-colors"
+              className="w-full px-4 py-3 border-2 border-orange text-teal placeholder-gray-400 text-base focus:outline-none focus:border-teal transition-colors"
             />
             <textarea
               placeholder="Message"
@@ -124,12 +124,12 @@ export default function Contact() {
               onChange={(e) =>
                 setFormData({ ...formData, message: e.target.value })
               }
-              className="w-full px-4 py-3 border-2 border-orange text-teal placeholder-gray-400 text-sm focus:outline-none focus:border-teal transition-colors resize-none"
+              className="w-full px-4 py-3 border-2 border-orange text-teal placeholder-gray-400 text-base focus:outline-none focus:border-teal transition-colors resize-none"
             />
             <div className="flex justify-end">
               <button
                 type="submit"
-                className="bg-teal text-white font-lulo text-xs px-8 py-3 tracking-wider hover:bg-teal-light transition-colors duration-300"
+                className="bg-teal text-white font-lulo text-sm px-8 py-3 tracking-wider hover:bg-teal-light transition-colors duration-300"
               >
                 Envoyer
               </button>
@@ -139,10 +139,10 @@ export default function Contact() {
 
         {/* Instagram */}
         <div className="mt-16 text-center">
-          <h3 className="font-lulo text-teal text-sm md:text-base mb-4">
+          <h3 className="font-lulo text-teal text-base md:text-lg mb-4">
             INSTAGRAM @lasun_goesdown
           </h3>
-          <p className="text-teal/70 text-sm font-light max-w-xl mx-auto">
+          <p className="text-teal/70 text-base md:text-lg font-light max-w-xl mx-auto">
             Hâte de vous retrouver pour la prochaine! Nous sommes en vrai très
             impatient de partager chaque édition avec vous. Restez bien connecté
             pour connaitre nos prochaines dates ;)

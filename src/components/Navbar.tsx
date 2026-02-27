@@ -37,7 +37,7 @@ export default function Navbar() {
           href={TICKETS_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-teal border-2 border-teal-light text-white font-lulo text-xs px-6 py-2.5 tracking-wider hover:bg-teal-light hover:text-teal transition-all duration-300"
+          className="bg-teal border-2 border-teal-light text-white font-lulo text-sm px-6 py-2.5 tracking-wider hover:bg-teal-light hover:text-teal transition-all duration-300"
         >
           TICKETS
         </a>
@@ -48,7 +48,7 @@ export default function Navbar() {
             <a
               key={link.label}
               href={link.href}
-              className="text-white text-sm font-light tracking-wide hover:text-teal-light transition-colors duration-200"
+              className="text-white text-base font-light tracking-wide hover:text-teal-light transition-colors duration-200"
             >
               {link.label}
             </a>

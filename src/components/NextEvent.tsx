@@ -10,7 +10,7 @@ export default function NextEvent() {
     <section className="bg-orange py-16 md:py-24">
       <div className="max-w-4xl mx-auto px-6 text-center">
         {/* Heading */}
-        <h2 className="font-lulo text-white text-2xl md:text-3xl mb-12">
+        <h2 className="font-lulo text-white text-3xl md:text-4xl mb-12">
           LA PROCHAINE{" "}
           <span role="img" aria-label="relaxed">
             😌
@@ -55,7 +55,7 @@ export default function NextEvent() {
             href={TICKETS_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-teal text-white font-lulo text-sm md:text-base px-10 py-4 tracking-wider hover:bg-teal-light transition-all duration-300 shadow-lg hover:shadow-xl"
+            className="inline-block bg-teal text-white font-lulo text-base md:text-lg px-10 py-4 tracking-wider hover:bg-teal-light transition-all duration-300 shadow-lg hover:shadow-xl"
           >
             BILLETTERIE
           </a>

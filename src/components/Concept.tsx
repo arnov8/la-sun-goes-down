@@ -16,12 +16,12 @@ export default function Concept() {
         </div>
 
         {/* Heading */}
-        <h2 className="font-lulo text-teal text-2xl md:text-3xl text-center mb-10">
+        <h2 className="font-lulo text-teal text-3xl md:text-4xl text-center mb-10">
           LE CONCEPT
         </h2>
 
         {/* Text content */}
-        <div className="space-y-6 text-teal/80 text-sm md:text-base leading-relaxed font-light">
+        <div className="space-y-6 text-teal/80 text-base md:text-lg leading-relaxed font-light">
           <p>
             La Sun Goes Down est un événement Sunset qui a su prendre ses
             marques en Martinique et qui tend à se developper dans la Caraïbe.

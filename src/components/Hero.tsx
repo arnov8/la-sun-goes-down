@@ -128,7 +128,7 @@ export default function Hero() {
         {/* Tagline with shimmer */}
         <h1 className="sr-only">La Sun Goes Down</h1>
         <p
-          className={`font-lulo text-white text-xs md:text-sm mt-6 transition-all duration-1000 delay-500 ${
+          className={`font-lulo text-white text-sm md:text-base mt-6 transition-all duration-1000 delay-500 ${
             loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
@@ -137,7 +137,7 @@ export default function Hero() {
 
         {/* Subtitle */}
         <h2
-          className={`font-lulo text-white text-sm md:text-lg lg:text-xl mt-10 max-w-3xl leading-relaxed px-4 transition-all duration-1000 delay-700 ${
+          className={`font-lulo text-white text-base md:text-xl lg:text-2xl mt-10 max-w-3xl leading-relaxed px-4 transition-all duration-1000 delay-700 ${
             loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >

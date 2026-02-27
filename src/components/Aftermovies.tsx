@@ -11,7 +11,7 @@ export default function Aftermovies() {
     <section className="bg-teal py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-6">
         {/* Heading */}
-        <h2 className="font-lulo text-white text-xl md:text-2xl lg:text-3xl text-center mb-12">
+        <h2 className="font-lulo text-white text-2xl md:text-3xl lg:text-4xl text-center mb-12">
           LES AFTERMOVIES{" "}
           <span role="img" aria-label="camera">
             🎥

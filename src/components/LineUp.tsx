@@ -16,12 +16,12 @@ export default function LineUp() {
         </div>
 
         {/* Heading */}
-        <h2 className="font-lulo text-teal text-xl md:text-2xl lg:text-3xl text-center mb-10">
+        <h2 className="font-lulo text-teal text-2xl md:text-3xl lg:text-4xl text-center mb-10">
           LINE UP & GUESTS INVITÉS
         </h2>
 
         {/* Description - 2 columns on desktop */}
-        <div className="grid md:grid-cols-2 gap-8 mb-12 text-teal/80 text-sm leading-relaxed font-light">
+        <div className="grid md:grid-cols-2 gap-8 mb-12 text-teal/80 text-base md:text-lg leading-relaxed font-light">
           <p>
             Les Sun Goes Down se veulent être les évènements d&apos;accueil des
             meilleurs artistes électroniques, House, Deep House du Monde et de la
@@ -45,10 +45,10 @@ export default function LineUp() {
         <div className="text-center mb-14 leading-loose">
           {artists.map((artist, i) => (
             <span key={artist.name}>
-              <span className="font-lulo text-teal text-xs md:text-sm">
+              <span className="font-lulo text-teal text-sm md:text-base">
                 {artist.name.toUpperCase()}
               </span>
-              <span className="text-teal/50 text-xs ml-1">
+              <span className="text-teal/50 text-sm ml-1">
                 ({artist.city})
               </span>
               {i < artists.length - 1 && (
@@ -58,24 +58,24 @@ export default function LineUp() {
           ))}
         </div>
 
-        {/* Artist photo grid (masonry) */}
-        <div className="masonry-grid">
+        {/* Artist photo grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
           {artists.map((artist) => (
             <div
               key={artist.name}
-              className="relative group overflow-hidden"
+              className="relative group overflow-hidden aspect-square"
             >
               <Image
                 src={artist.image}
                 alt={artist.name}
-                width={400}
-                height={400}
-                className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-110"
+                fill
+                sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
+                className="object-cover transition-transform duration-500 group-hover:scale-110"
               />
               {/* Hover overlay with name */}
               <div className="absolute inset-0 bg-teal/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <div className="text-center">
-                  <p className="font-lulo text-white text-xs">
+                <div className="text-center px-2">
+                  <p className="font-lulo text-white text-xs md:text-sm">
                     {artist.name.toUpperCase()}
                   </p>
                   <p className="text-teal-light text-xs mt-1">{artist.city}</p>
