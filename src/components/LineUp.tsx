@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { artists } from "@/data/artists";
+import { artistNames, galleryPhotos } from "@/data/artists";
 
 export default function LineUp() {
   return (
@@ -43,7 +43,7 @@ export default function LineUp() {
 
         {/* Artist names list */}
         <div className="text-center mb-14 leading-loose">
-          {artists.map((artist, i) => (
+          {artistNames.map((artist, i) => (
             <span key={artist.name}>
               <span className="font-lulo text-teal text-sm md:text-base">
                 {artist.name.toUpperCase()}
@@ -51,7 +51,7 @@ export default function LineUp() {
               <span className="text-teal/50 text-sm ml-1">
                 ({artist.city})
               </span>
-              {i < artists.length - 1 && (
+              {i < artistNames.length - 1 && (
                 <span className="text-teal/30 mx-1">,</span>
               )}
             </span>
@@ -60,14 +60,14 @@ export default function LineUp() {
 
         {/* Artist photo grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
-          {artists.map((artist) => (
+          {galleryPhotos.map((photo, i) => (
             <div
-              key={artist.name}
+              key={`${photo.alt}-${i}`}
               className="relative group overflow-hidden aspect-square"
             >
               <Image
-                src={artist.image}
-                alt={artist.name}
+                src={photo.src}
+                alt={photo.alt}
                 fill
                 sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -76,9 +76,8 @@ export default function LineUp() {
               <div className="absolute inset-0 bg-teal/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <div className="text-center px-2">
                   <p className="font-lulo text-white text-xs md:text-sm">
-                    {artist.name.toUpperCase()}
+                    {photo.alt.toUpperCase()}
                   </p>
-                  <p className="text-teal-light text-xs mt-1">{artist.city}</p>
                 </div>
               </div>
             </div>

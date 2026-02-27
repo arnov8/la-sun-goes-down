@@ -1,31 +1,65 @@
-export interface Artist {
+export interface ArtistName {
   name: string;
   city: string;
-  image: string;
 }
 
-export const artists: Artist[] = [
-  { name: "Alvaro Suarez", city: "Copenhague", image: "/images/artists/alvaro-suarez.png" },
-  { name: "Androma", city: "Paris", image: "/images/artists/androma.jpg" },
-  { name: "Anton Dhouran", city: "Paris", image: "/images/artists/anton-dhouran.jpg" },
-  { name: "Bonjour Ben", city: "Berlin", image: "/images/artists/bonjour-ben.jpg" },
-  { name: "Céline", city: "Paris", image: "/images/artists/celine.jpg" },
-  { name: "Eisor", city: "Paris", image: "/images/artists/eisor.jpg" },
-  { name: "Fond Sonore", city: "Martinique", image: "/images/artists/fond-sonore.jpg" },
-  { name: "Ivan de la Ganesherie", city: "Guadeloupe", image: "/images/artists/ivan-de-la-ganesherie.jpg" },
-  { name: "Jacob Groening", city: "Berlin", image: "/images/artists/jacob-groening.jpg" },
-  { name: "Keeshna", city: "Martinique", image: "/images/artists/keeshna.jpg" },
-  { name: "Juan", city: "Paris", image: "/images/artists/juan.jpg" },
-  { name: "Lia Montaigne", city: "Martinique", image: "/images/artists/lia-montaigne.jpg" },
-  { name: "Linoa", city: "Biarritz", image: "/images/artists/linoa.jpg" },
-  { name: "Piste Noire", city: "Martinique", image: "/images/artists/piste-noire.jpg" },
-  { name: "Sam Shure", city: "Berlin", image: "/images/artists/sam-shure.jpg" },
-  { name: "Sander", city: "Paris", image: "/images/artists/sander.jpg" },
-  { name: "Shimon", city: "Paris", image: "/images/artists/shimon.jpg" },
-  { name: "Sir Davido", city: "Londres", image: "/images/artists/sir-davido.jpg" },
-  { name: "Solstice", city: "Paris", image: "/images/artists/solstice.jpg" },
-  { name: "Sorä", city: "Paris", image: "/images/artists/sora.jpg" },
-  { name: "Vico", city: "Malaga", image: "/images/artists/vico.jpg" },
+export interface GalleryPhoto {
+  src: string;
+  alt: string;
+}
+
+// Text list of artists (exactly as displayed on the original site)
+export const artistNames: ArtistName[] = [
+  { name: "Alvaro Suarez", city: "Copenhague" },
+  { name: "Androma", city: "Paris" },
+  { name: "Anton Dhouran", city: "Paris" },
+  { name: "Bonjour Ben", city: "Berlin" },
+  { name: "Céline", city: "Paris" },
+  { name: "Eisor", city: "Paris" },
+  { name: "Fond Sonore", city: "Martinique" },
+  { name: "Ivan de la Ganesherie", city: "Guadeloupe" },
+  { name: "Jacob Groening", city: "Berlin" },
+  { name: "Keeshna", city: "Martinique" },
+  { name: "Juan", city: "Paris" },
+  { name: "Lia Montaigne", city: "Martinique" },
+  { name: "Linoa", city: "Biarritz" },
+  { name: "Piste Noire", city: "Martinique" },
+  { name: "Sam Shure", city: "Berlin" },
+  { name: "Sander", city: "Paris" },
+  { name: "Shimon", city: "Paris" },
+  { name: "Sir Davido", city: "Londres" },
+  { name: "Solstice", city: "Paris" },
+  { name: "Sorä", city: "Paris" },
+  { name: "Vico", city: "Malaga" },
+];
+
+// Gallery photos in the exact order from the original site (25 photos)
+export const galleryPhotos: GalleryPhoto[] = [
+  { src: "/images/artists/alvaro-suarez.png", alt: "Alvaro Suarez" },
+  { src: "/images/artists/androma.jpg", alt: "Androma" },
+  { src: "/images/artists/anton-dhouran.jpg", alt: "Anton Dhouran" },
+  { src: "/images/artists/bonjour-ben.jpg", alt: "Bonjour Ben" },
+  { src: "/images/artists/celine.jpg", alt: "Céline" },
+  { src: "/images/artists/eisor.jpg", alt: "Eisor" },
+  { src: "/images/artists/fond-sonore.jpg", alt: "Fond Sonore" },
+  { src: "/images/artists/fond-sonore-2.png", alt: "Fond Sonore" },
+  { src: "/images/artists/ivan-de-la-ganesherie.jpg", alt: "Ivan de la Ganesherie" },
+  { src: "/images/artists/jacob-groening.jpg", alt: "Jacob Groening" },
+  { src: "/images/artists/juan.jpg", alt: "Juan" },
+  { src: "/images/artists/keeshna.jpg", alt: "Keeshna" },
+  { src: "/images/artists/lia-montaigne.jpg", alt: "Lia Montaigne" },
+  { src: "/images/artists/linoa.jpg", alt: "Linoa" },
+  { src: "/images/artists/piste-noire.jpg", alt: "Piste Noire" },
+  { src: "/images/artists/sam-shure.jpg", alt: "Sam Shure" },
+  { src: "/images/artists/sander.jpg", alt: "Sander" },
+  { src: "/images/artists/shimon.jpg", alt: "Shimon" },
+  { src: "/images/artists/vander.jpg", alt: "Vander" },
+  { src: "/images/artists/solstice.jpg", alt: "Solstice" },
+  { src: "/images/artists/sir-davido.jpg", alt: "Sir Davido" },
+  { src: "/images/artists/sora.jpg", alt: "Sorä" },
+  { src: "/images/artists/vico.jpg", alt: "Nicolas Saad" },
+  { src: "/images/artists/ditti.jpg", alt: "Ditti" },
+  { src: "/images/artists/lupari.png", alt: "Lupari" },
 ];
 
 export const aftermovies = [
